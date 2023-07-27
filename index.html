@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
         
         <title>Bootstrap 5</title>
@@ -9,164 +9,173 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body style="margin:10px;">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
-            <div class="container-fluid">
-                <a href="#"class="navbar-brand">Logo</a>
-                
-                <div class="collapse navbar-collapse position-relative" id="collapsibleNavbar" >
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Bağlantı 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bağlantı 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bağlantı 3</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex position-absolute top-0 end-0">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-primary" type="button">Search</button>
-                      </form>
+    <body >
+        <div class="container-fluid mt-3">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- resimler -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Wallpaper-10.jpg" alt="slider" style="width: 100%; height:500px;" >
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Excalibur-Wallpaper-02.jpg" alt="slider" style="width: 100%; height:500px;" >
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Excalibur-Wallpaper-01.jpg" alt="slider" style="width: 100%; height:500px;" >
                 </div>
             </div>
-        </nav>
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
-            <div class="container-fluid">
-                <a href="#"class="navbar-brand">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                <div class="collapse navbar-collapse position-relative" id="collapsibleNavbar" >
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Bağlantı 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bağlantı 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Bağlantı 3</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex position-absolute top-0 end-0">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-primary" type="button">Search</button>
-                      </form> 
+             <!-- Sağ ve sol buton conları-->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+             </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+               <span class="carousel-control-next-icon"></span>
+             </button>
+            </div><br>
+
+            <button type="button" class="btn btn-success float-end" data-bs-target="#myModal" data-bs-toggle="modal">Open Modal
+            </button>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content"> 
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+
+                          <div class="modal-body">Modal Body</div>
+
+                          <div class="modal-footer">
+                            <button type="button" class=" btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav><br><br><br>
 
-        <div class="progress" style="height:30px; ">
-            <div class="progress-bar" style="width: 40%;">%40</div>
-            <div class="progress-bar progress-bar-striped bg-warning" style="width: 20%;">&20</div>
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 20%;">%20</div>
-        </div>
-        <div style="margin: 10px;">
-            <div class="spinner-border text-danger"></div>
-            <div class="spinner-grow  text-success"></div>
-        </div>
-        <div>
-            <ul class="pagination pagination-lg justify-content-center">
-
-                <li class="page-item disabled"><a href="#" class="page-link">Önceki</a></li>
-                <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                <li class="page-item"><a href="#" class="page-link">3</a></li>
-                <li class="page-item"><a href="#" class="page-link">Sonraki</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="list-group list-group-numbered" style="margin: 10px;">
-                <li class="list-group-item active">İlk öğe</li>
-                <li class="list-group-item disabled">ikinci öğe</li>
-                <li class="list-group-item">İlk öğe</li>
-            </ul>
-            <ul class="list-group list-group-horizontal" style="margin: 10px;">
-                <li class="list-group-item">İlk öğe</li>
-                <li class="list-group-item">İlk öğe</li>
-                <li class="list-group-item">İlk öğe</li>
-            </ul>
-            <ul class="list-group list-group-flush"style="margin: 10px;">
-                <li class="list-group-item list-group-item-success">İlk öğe</li>
-                <li class="list-group-item list-group-item-primary">ikinci öğe</li>
-                <li class="list-group-item list-group-item-info  d-flex justify-content-between align-items-center">İlk öğe
-                    <span class="badge bg-primary rounded-pill -">12</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="card" style="width: 300px;">
-            <img style="width: 100%;" class="card-image-top" src="img/icon.jpg" alt="profil">
-            <div class="card-body bg-light">
-                <h5 class="card-title">John Doe</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, perspiciatis?</p>
-                <a class="btn btn-primary" href="#">Profile Git</a>
-            </div>
-        </div>
-        <div class="dropdown dropend" style="margin:20px ;">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
-            <ul class="dropdown-menu">
-                <li><h5 class="dropdown-header">Başlık 1</h5></li>
-                <li><a class="dropdown-item active" href="#">Link1</a></li>
-                <li><a class="dropdown-item disabled" href="#">Link2</a></li>
-                <li><a class="dropdown-item" href="#">Link3</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><h5 class="dropdown-header">Başlık 2</h5></li>
-                <li><a class="dropdown-item" href="#">Link4</a></li>
-                <li><span class="dropdown-item-text">Sadece metin</span></li>
-            </ul>
-        </div>
-        <div>    
-            <button type="button" class="btn bg-success" data-bs-toggle="collapse" data-bs-target="#id">Collapsible</button>
-            <div id="id" class="collapse show">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, fugit. Quis non eligendi a? Tenetur dignissimos accusantium repudiandae nulla ipsam.</p>
-            </div>
-        </div>
-
-        <div>
-            <ul class="nav justify-content-center nav-tabs nav-justified">
-                <li class="nav-item">
-                    <a href="#link1" class="nav-link active" data-bs-toggle="tab">Bağlantı 1</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bağlantı 2</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">LİNK 1</a></li>
-                        <li><a class="dropdown-item">LİNK 2</a></li>
-                        <li><a class="dropdown-item">LİNK 3</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#link3" class="nav-link " data-bs-toggle="tab">Bağlantı 3</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#link4" class="nav-link" data-bs-toggle="tab">Bağlantı 4</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div id="link3" class="container tab-pane">
-                   <h3>LİNK 3</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <!-- tooltip -->
+                <div>
+                    <button type="button" class="btn btn-danger mx-auto w-25" data-bs-placement="top" title="Hello World!" data-bs-toggle="tooltip">Tooltip</button>
                 </div>
-                <div id="link4" class="container tab-pane">
-                    <h3>LİNK 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <!-- popover -->
+                <div class="mt-5">
+                <button type="button" class="btn btn-warning float-lg-end p-3 shodaw-lg"  data-bs-toggle="popover" title="Popover Header" data-bs-content=" amet consectetur adipisicing elit. Et, magnam.">Popover</button>
+                </div><br> 
+
+                <!-- toast -->
+                <button type="button" class="btn btn-info border border-dark border-2" id="toastbtn" >Show Toast</button>
+                <div class="toast">
+                    <div class="toast-header">
+                        <p class="me-auto">Tost Header</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officiis.</p>
+                    </div>
+                </div>
+
+                <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50"> 
+                    <nav class=" navbar navbar-expand-sm bg-dark navbar-dark">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> 
+                                <a  class="nav-link" href="#setion1">Section 1</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a  class="nav-link" href="#section2">Section 2</a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a  class="nav-link" href="#section3">Section 3</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="section1" class="bg-success text-white" style="padding: 20px;" >
+                        <p>Lorem <span class="align-middle">ipsum dolor sit</span> amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur <span class="align-text-bottom">adipisicing elit.</span> Odio, blanditiis.</p>
+                    </div>
+                    <div id="section2" class="bg-dark text-white" style="padding: 20px;" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                    </div>
+                    <div id="section3" class="bg-primary text-white" style="padding: 20px;" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
+
+                    </div>
+
+                </div><br>
+                 <!-- Offcanvas -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#demo1">Offcanvas</button>
+                 <div class="offcanvas offcanvas-end" id="demo1" >
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Lorem</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-danger" >Button</button>
+                    </div>
                  </div>
-                 <div id="link1" class="container tab-pane">
-                    <h3>LİNK 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <div class="d-flex mt-5 bg-dark p-3 justify-content-center">
+                    <div class="p-2 bg-primary flex-fill">Flex 1</div>
+                    <div class="p-2 bg-success  flex-fill">Flex 2</div>
+                    <div class="p-2 bg-warning  flex-fill">Flex 3</div>
                  </div>
+                 <div class="d-inline-flex mt-5 bg-dark p-3 align-items-stretch" style="height:150px">
+                    <div class="p-2 bg-primary order-3">Flex 1</div>
+                    <div class="p-2 bg-success align-self-start order-2">Flex 2</div>
+                    <div class="p-2 bg-warning order-1">Flex 3</div>
+                 </div>
+                 <div class="d-flex flex-row-reverse justify-content-around mt-5 bg-dark p-3">
+                    <div class="p-2 bg-primary flex-grow-1">Flex 1</div>
+                    <div class="p-2 bg-success">Flex 2</div>
+                    <div class="p-2 bg-warning ">Flex 3</div>
+                 </div>
+                 <div class="d-flex flex-column bg-dark p-3 mt-5">
+                    <div class="p-2 bg-primary">Flex 1</div>
+                    <div class="p-2 bg-success">Flex 2</div>
+                    <div class="p-2 bg-warning ">Flex 3</div>
+                 </div>
+                </div>
+
+                <script>
+                    // data-bs-toggle="tooltip eşit olanları seçip tooltipTriggerList atıyor ardından map metodunu çağırarak hepsinden yeni bir nesne oluşturup açıyor  
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                      return new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                // popover js 
+                    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                      return new bootstrap.Popover(popoverTriggerEl)
+                    })
+                 //toast js
+                    document.getElementById("toastbtn").onclick = function() {
+                    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                    var toastList = toastElList.map(function(toastEl) {
+                      return new bootstrap.Toast(toastEl)
+                    })
+                     toastList.forEach(toast => toast.show()) 
+                     }
+                    </script>
+                    
+                    
             </div>
-        </div>
+       </body>
     </body>
 </html>
