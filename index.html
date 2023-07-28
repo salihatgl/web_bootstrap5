@@ -9,173 +9,135 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
     </head>
+    
     <body >
-        <div class="container-fluid mt-3">
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <div class="container mt-3">
+           <form  class="w-50 was-validated" >
+            <div class="row">
+            <div class="col">
+                <label for="email" class="form-label" >E-mail:</label>
+            <div class="input-group form-floting mb-3">
+                <input type="email" name="email" id="email" class="form-control form-control-sm" placeholder="E-mailiizi giriniz..." required>
+                <span class="input-group-text">@gmail.com</span>
+                <div class="invalid-feedback">Lütfen Bu Alanı Doldurunuz.</div>
+                <div class="valid-feedback">Geçerli.</div>
+            </div>
+            </div>
+            <div class="col">
+            <label for="password" class="form-label" >Şifre:</label>
+            <div class="input-group mb-3">
+                <input type="password" name="password" id="password" class="form-control form-control-sm" placeholder="Şifrenizi giriniz..." required>
+                 <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </div>
+            </div>
+            </div>
+           </form>
+           <form class="w-50" >
+            <div class="row">
+                <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">1</span>
+                <span class="input-group-text">2</span>
+                <input type="text"  class="form-control form-control-sm" placeholder="Devredışı Giriş" disabled>
+                
+            </div>
+            </div>
+            <div class="col">
+            <div class=" mb-3">
+                <input type="text"  class="form-control form-control-sm" placeholder="Saltokur Giriş" readonly>
+            </div>
+            </div>
+            <div class="col">
+            <div class=" mb-3">
+                <input type="text"  class="form-control-plaintext form-control-sm" placeholder="Plaintext Giriş" value="Plaintext Giriş"required>
+            </div>
+            </div>
+            <div class=" form-floating ">
+                <textarea name="text" id="commit" class="form-control form-control-lg"  rows="5" ></textarea>
+                <label for="comment">Yorumlar</label>
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="color" class="form-label">Renk Girişi:</label>
+                <input type="color" class="form-control form-control-color form-control-sm" value="#cc99ff" required>
+                
+            </div>
+            <div class=" form-floating mb-3">
+                <select name="sellist1" id="sel1" class="form-select form-select-sm"  required>
+                    <option selected disabled value="">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <label for="sel1" class="form-label">Liste Secin (birini seçiniz):</label>
+            </div>
+            <div class="mb-3">
+                <label for="sel2" class="form-label">Renk Girişi:</label>
+                <select multiple name="sellist2" id="sel2" class="form-select form-select-sm">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
             </div>
 
-            <!-- resimler -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/Wallpaper-10.jpg" alt="slider" style="width: 100%; height:500px;" >
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Excalibur-Wallpaper-02.jpg" alt="slider" style="width: 100%; height:500px;" >
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Excalibur-Wallpaper-01.jpg" alt="slider" style="width: 100%; height:500px;" >
-                </div>
+            <div>
+                <label for="customRange" class="form-label">Range:</label>
+                <input type="range" id="customRange" class="form-range" step="10" >
+            </div>
+            
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                 <input type="checkbox" class="form-check-input" name="benihatirla">Beni Hatırla
+                </label>
             </div>
 
-             <!-- Sağ ve sol buton conları-->
-              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-             <span class="carousel-control-prev-icon"></span>
-             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-               <span class="carousel-control-next-icon"></span>
-             </button>
-            </div><br>
-
-            <button type="button" class="btn btn-success float-end" data-bs-target="#myModal" data-bs-toggle="modal">Open Modal
-            </button>
-
-            <div id="myModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content"> 
-
-                        <div class="modal-header">
-                            <h4 class="modal-title">Modal Heading</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                          </div>
-
-                          <div class="modal-body">Modal Body</div>
-
-                          <div class="modal-footer">
-                            <button type="button" class=" btn btn-danger" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- tooltip -->
-                <div>
-                    <button type="button" class="btn btn-danger mx-auto w-25" data-bs-placement="top" title="Hello World!" data-bs-toggle="tooltip">Tooltip</button>
-                </div>
-
-                <!-- popover -->
-                <div class="mt-5">
-                <button type="button" class="btn btn-warning float-lg-end p-3 shodaw-lg"  data-bs-toggle="popover" title="Popover Header" data-bs-content=" amet consectetur adipisicing elit. Et, magnam.">Popover</button>
-                </div><br> 
-
-                <!-- toast -->
-                <button type="button" class="btn btn-info border border-dark border-2" id="toastbtn" >Show Toast</button>
-                <div class="toast">
-                    <div class="toast-header">
-                        <p class="me-auto">Tost Header</p>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                    </div>
-                    <div class="toast-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officiis.</p>
-                    </div>
-                </div>
-
-                <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50"> 
-                    <nav class=" navbar navbar-expand-sm bg-dark navbar-dark">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"> 
-                                <a  class="nav-link" href="#setion1">Section 1</a>
-                            </li>
-                            <li class="nav-item"> 
-                                <a  class="nav-link" href="#section2">Section 2</a>
-                            </li>
-                            <li class="nav-item"> 
-                                <a  class="nav-link" href="#section3">Section 3</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div id="section1" class="bg-success text-white" style="padding: 20px;" >
-                        <p>Lorem <span class="align-middle">ipsum dolor sit</span> amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur <span class="align-text-bottom">adipisicing elit.</span> Odio, blanditiis.</p>
-                    </div>
-                    <div id="section2" class="bg-dark text-white" style="padding: 20px;" >
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                    </div>
-                    <div id="section3" class="bg-primary text-white" style="padding: 20px;" >
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, blanditiis.</p>
-
-                    </div>
-
-                </div><br>
-                 <!-- Offcanvas -->
-                <button type="button" class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#demo1">Offcanvas</button>
-                 <div class="offcanvas offcanvas-end" id="demo1" >
-                    <div class="offcanvas-header">
-                        <h1 class="offcanvas-title">Lorem</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <button type="button" class="btn btn-danger" >Button</button>
-                    </div>
-                 </div>
-                 <div class="d-flex mt-5 bg-dark p-3 justify-content-center">
-                    <div class="p-2 bg-primary flex-fill">Flex 1</div>
-                    <div class="p-2 bg-success  flex-fill">Flex 2</div>
-                    <div class="p-2 bg-warning  flex-fill">Flex 3</div>
-                 </div>
-                 <div class="d-inline-flex mt-5 bg-dark p-3 align-items-stretch" style="height:150px">
-                    <div class="p-2 bg-primary order-3">Flex 1</div>
-                    <div class="p-2 bg-success align-self-start order-2">Flex 2</div>
-                    <div class="p-2 bg-warning order-1">Flex 3</div>
-                 </div>
-                 <div class="d-flex flex-row-reverse justify-content-around mt-5 bg-dark p-3">
-                    <div class="p-2 bg-primary flex-grow-1">Flex 1</div>
-                    <div class="p-2 bg-success">Flex 2</div>
-                    <div class="p-2 bg-warning ">Flex 3</div>
-                 </div>
-                 <div class="d-flex flex-column bg-dark p-3 mt-5">
-                    <div class="p-2 bg-primary">Flex 1</div>
-                    <div class="p-2 bg-success">Flex 2</div>
-                    <div class="p-2 bg-warning ">Flex 3</div>
-                 </div>
-                </div>
-
-                <script>
-                    // data-bs-toggle="tooltip eşit olanları seçip tooltipTriggerList atıyor ardından map metodunu çağırarak hepsinden yeni bir nesne oluşturup açıyor  
-                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-                    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                      return new bootstrap.Tooltip(tooltipTriggerEl)
-                    })
-                // popover js 
-                    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-                    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-                      return new bootstrap.Popover(popoverTriggerEl)
-                    })
-                 //toast js
-                    document.getElementById("toastbtn").onclick = function() {
-                    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-                    var toastList = toastElList.map(function(toastEl) {
-                      return new bootstrap.Toast(toastEl)
-                    })
-                     toastList.forEach(toast => toast.show()) 
-                     }
-                    </script>
-                    
-                    
+            <label class="form-check-label" for="label">Cinsiyet:</label>
+            <div class="form-check ">
+                <input type="radio" class="form-check-input" id="radio1" name="cinsiyet" value="kız" >
+                <label class="form-check-label" for="radio1">Kız</label>
+              </div>
+              <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="radio2" name="cinsiyet" value="erkek" >
+                <label class="form-check-label" for="radio2">Erkek</label>
+              </div>
+              <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="mySwitch" name="darkmode" value="yes" checked>
+                <label class="form-check-label" for="mySwitch">Darkmode</label>
+              </div>
+           </form>
+           <a class="btn btn-primary" href="temel.html" role="button">Temel bootstrap</a>
+          
+        
+           <div class="row mt-3">
+            <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-success">
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
-       </body>
+            <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-primary">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="row mt-3">
+                <div class="col bg-primary text-center p-2">2/1</div>
+                <div class="col bg-warning text-center p-2">2/2</div>
+            </div>
+            <div class="row">
+                <div class="col bg-primary text-center p-2">4/1</div>
+                <div class="col bg-warning text-center p-2">4/2</div>
+                <div class="col bg-primary text-center p-2">4/3</div>
+                <div class="col bg-warning text-center p-2">4/4</div>
+            </div>
+            <div class="row">
+                <div class="col bg-primary text-center p-2">6/1</div>
+                <div class="col bg-warning text-center p-2">6/2</div>
+                <div class="col bg-primary text-center p-2">6/3</div>
+                <div class="col bg-warning text-center p-2">6/4</div>
+                <div class="col bg-primary text-center p-2">6/5</div>
+                <div class="col bg-warning text-center p-2">6/6</div>
+            </div>
+
+           </div>
+        </div>
     </body>
 </html>
